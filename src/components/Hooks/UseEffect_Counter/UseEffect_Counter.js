@@ -4,12 +4,16 @@ import "../../../style/styles.css";
 const UseEffect_Counter = props => {
   const [count, setCount] = useState(0);
 
-  // Run all the time
+  // useEffect run all the time  and clean up
   useEffect(() => {
     document.title = count;
-    setTimeout(() => {
+    const timer = setTimeout(() => {
       console.log("Run all the time..");
     }, 1000);
+    return () => {
+      console.log("Clean Up Work using useEffect()");
+      clearTimeout(timer);
+    };
   });
 
   // Run the useEffect only the first time ([])
