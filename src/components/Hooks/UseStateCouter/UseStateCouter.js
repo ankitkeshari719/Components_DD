@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "../../../style/styles.css";
 
-const UseState_Couter = props => {
+const UseStateCouter = props => {
   const [count, setCount] = useState(0);
 
   return (
@@ -15,4 +15,4 @@ const UseState_Couter = props => {
   );
 };
 
-export default UseState_Couter;
+export default UseStateCouter;

@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import "../../../style/styles.css";
 
-const UseEffect_Counter = props => {
+const UseEffectCounter = props => {
   const [count, setCount] = useState(0);
 
   // useEffect run all the time  and clean up
@@ -35,4 +35,4 @@ const UseEffect_Counter = props => {
   );
 };
 
-export default UseEffect_Counter;
+export default UseEffectCounter;

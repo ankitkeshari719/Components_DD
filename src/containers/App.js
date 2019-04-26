@@ -1,15 +1,17 @@
 import React, { Component } from "react";
-import CounterUpdate from "../components/Hooks/UseState_Counter/UseState_Couter";
-import UseStateTodos from "../components/Hooks/UseState_Todos/UseState_Todos";
-import UseEffectCounter from "../components/Hooks/UseEffect_Counter/UseEffect_Counter";
+import {
+  UseEffectCounter,
+  UseStateCouter,
+  UseStateTodos
+} from "../components/Hooks";
 
 class App extends Component {
   render() {
     return (
       <div>
-        <CounterUpdate />
+        <UseStateCouter />
         <UseStateTodos />
-        <UseEffectCounter/>
+        <UseEffectCounter />
       </div>
     );
   }
