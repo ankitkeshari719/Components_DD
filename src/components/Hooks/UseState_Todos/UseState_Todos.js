@@ -1,12 +1,12 @@
 import React, { useState } from "react";
-import "./UseState_Todos.css";
+import "../../../style/styles.css";
 
 const UseStateTodos = props => {
   const [todos, setTodos] = useState([{ text: "Learn Hooks" }]);
   const [fruit, setFruit] = useState("banana");
 
   const TodoClickHandler = () => {
-    setTodos("orange");
+    setTodos("Learn React");
   };
 
   const FruitsClickHandler = () => {
@@ -14,7 +14,7 @@ const UseStateTodos = props => {
   };
 
   return (
-    <div className="todoClass">
+    <div className="customizedDiv">
       <h1>Hooks: Use of useState()</h1>
       <p>{todos[0].text}</p>
       <p>{fruit}</p>
